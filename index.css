@@ -319,3 +319,14 @@ input {
 	  width: 100%;
 	}
 	
+	.answer--yes {
+		background-image: url('images/transparent-yippee.gif');
+		background-repeat:no-repeat;
+		background-size: 600px;
+		position: fixed;
+		z-index: 9;
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity .5s ease-in-out;
+	}
+	
