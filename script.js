@@ -10,10 +10,7 @@
 			root.style.setProperty('--bg-color', '#FFE3EC'); // Light mode background color
 			root.style.setProperty('--text-color', '#e75480');  // Light mode text color
 			root.style.setProperty('--button-color', '#e75480');  // Light mode button text color
-			toggleButton.classList.remove('btn-6');
-			toggleButton.classList.add('btn-7');
-			toggleButton2.classList.remove('btn-6');
-			toggleButton2.classList.add('btn-7');
+			root.style.setProperty('--button-text', '#FFE3E');  // Light mode button text color
 			if (themeSwitch.nextElementSibling) {
 				themeSwitch.nextElementSibling.textContent = 'Light Mode';
 			}
@@ -21,10 +18,7 @@
 			root.style.setProperty('--bg-color', '#e75480');  // Dark mode background color
 			root.style.setProperty('--text-color', '#FFE3EC'); // Dark mode text color
 			root.style.setProperty('--button-color', '#FFE3EC');  // Light mode button text color
-			toggleButton.classList.remove('btn-7');
-			toggleButton.classList.add('btn-6');
-			toggleButton2.classList.remove('btn-7');
-			toggleButton2.classList.add('btn-6');
+			root.style.setProperty('--button-text', '#e75480');  // Light mode button text color
 			if (themeSwitch.nextElementSibling) {
 				themeSwitch.nextElementSibling.textContent = 'Dark Mode';
 			}
@@ -58,7 +52,7 @@
 
 	function showYippeeCat() {
 		var valentineContainer = document.getElementById("valentineContainer");
-		// var valentineButtons = document.getElementsByClass("custom-btn");
+		var buttons = document.querySelectorAll('.custom-btn');
 		valentineContainer.classList.add("answer--yes");
-		// valentineButtons.style.display("hidden");
+		buttons.forEach(button => button.classList.add('hide-buttons'));
 	}
