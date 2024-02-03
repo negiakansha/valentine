@@ -58,5 +58,7 @@
 
 	function showYippeeCat() {
 		var valentineContainer = document.getElementById("valentineContainer");
+		// var valentineButtons = document.getElementsByClass("custom-btn");
 		valentineContainer.classList.add("answer--yes");
+		// valentineButtons.style.display("hidden");
 	}

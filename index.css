@@ -321,12 +321,27 @@ input {
 	
 	.answer--yes {
 		background-image: url('images/transparent-yippee.gif');
-		background-repeat:no-repeat;
-		background-size: 600px;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+  		background-position: center;
+		background-size: 800px;
 		position: fixed;
 		z-index: 9;
 		visibility: hidden;
 		opacity: 0;
 		transition: opacity .5s ease-in-out;
 	}
+
+	/* body {
+		background-image: url('url.gif');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+	  } */
 	
+	  @media only screen and (max-width: 600px) {
+		.answer--yes {
+			background-size: 600px;
+		}
+	  }
