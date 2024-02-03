@@ -3,6 +3,7 @@ const themeSwitch = document.getElementById('themeSwitch');
 const root = document.documentElement;
 const toggleButton = document.getElementById('toggleButton');
 const yesButton = document.getElementById("yesButton");
+const yayHidden = document.getElementsByClassName("yayHidden");
 
 // Function to toggle light and dark themes
 function toggleTheme() {
@@ -10,7 +11,7 @@ function toggleTheme() {
 		root.style.setProperty('--bg-color', '#FFE3EC'); // Light mode background color
 		root.style.setProperty('--text-color', '#e75480');  // Light mode text color
 		root.style.setProperty('--button-color', '#e75480');  // Light mode button text color
-		root.style.setProperty('--button-text', '#FFE3E');  // Light mode button text color
+		root.style.setProperty('--button-text', '#FFE3EC');  // Light mode button text color
 		if (themeSwitch.nextElementSibling) {
 			themeSwitch.nextElementSibling.textContent = 'Light Mode';
 		}

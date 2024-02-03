@@ -255,6 +255,15 @@ input {
 		display: none;
 	}
 
+	.yayHidden {
+		position: absolute;
+		/* visibility: hidden; */
+		margin-top: 120px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index:10;
+	}
+
 	.move-left {
 		margin-right: 220px;
 		transition: none;
