@@ -257,6 +257,7 @@ input {
 
 	.move-left {
 		margin-right: 220px;
+		transition: none;
 	}
 	
 	  @media only screen and (max-width: 600px) {
