@@ -64,8 +64,6 @@ function changeButton()
 	yesButton.classList.add("move-left");
 	const windowWidth = window.innerWidth - 170;
     const windowHeight = window.innerHeight - 170;
-    // var i = Math.floor(Math.random()*500)+1;
-    // var j = Math.floor(Math.random()*500)+1;
 	var i = Math.floor(Math.random() * windowWidth);
     var j = Math.floor(Math.random() * windowHeight);
 	toggleButton.style.position = 'absolute';
